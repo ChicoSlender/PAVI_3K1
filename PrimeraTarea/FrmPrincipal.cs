@@ -12,6 +12,8 @@ namespace PrimeraTarea
 {
     public partial class FrmPrincipal : Form
     {
+        Persona encontrada;
+
         public FrmPrincipal()
         {
             InitializeComponent();
@@ -19,7 +21,18 @@ namespace PrimeraTarea
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int dniBuscado = Convert.ToInt32(txtDNI.Text);
+            encontrada = new Persona(dniBuscado);
 
+            if(encontrada.validar())
+            {
+                MessageBox.Show("Persona encontrada", "Resultado de la busqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lblNombre.Text = lblNombre.Text + " " + encontrada.Nombre;
+                lblApellido.Text = lblApellido.Text + " " + encontrada.Apellido;
+            } else
+            {
+                MessageBox.Show("Persona no encontrada", "Resultado de la busqueda", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)

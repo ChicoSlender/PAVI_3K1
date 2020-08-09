@@ -28,7 +28,7 @@ namespace PrimeraTarea
 		public bool validar() {
 			DataTable tabla;
 			Datos datos = new Datos();
-			string consulta = "SELECT * FROM Persona WERE Dni=" + this.dni;
+			string consulta = "SELECT * FROM Persona WHERE Dni=" + this.dni;
 			tabla = datos.consultar(consulta);
 
 			if (tabla.Rows.Count > 0)
