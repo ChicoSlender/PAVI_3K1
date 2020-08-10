@@ -31,8 +31,8 @@ namespace PrimeraTarea
 			string consulta = "SELECT * FROM Persona WHERE Dni=" + this.dni;
 			tabla = datos.consultar(consulta);
 
-			if (tabla.Rows.Count > 0)
-			{
+			if (tabla.Rows.Count > 0)	{
+
 				this.nombre = tabla.Rows[0][1].ToString();
 				this.apellido = tabla.Rows[0][2].ToString();
 				return true;
