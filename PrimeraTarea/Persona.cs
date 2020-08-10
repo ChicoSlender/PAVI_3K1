@@ -12,7 +12,7 @@ namespace PrimeraTarea
 		string nombre;
 		string apellido;
 		int dni;
-
+		//Esta clase contiene primeramente el dni ingresado y luego, si la persona existe en la BD, se llenará con nombre y apellido
 		public Persona(int dni) {
 			this.dni = dni;
 		}
