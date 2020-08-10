@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.OleDb;
 
-
+// Clase utilizada para conexion con la bd
 namespace PrimeraTarea
 {
 	class Datos
