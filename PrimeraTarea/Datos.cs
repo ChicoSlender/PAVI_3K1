@@ -13,7 +13,7 @@ namespace PrimeraTarea
 	{
 		OleDbConnection conexion = new OleDbConnection();
 		OleDbCommand comando = new OleDbCommand();
-		string cadenaConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\caoli\Desktop\PAV_2020_3K1\PAVI_3K1\BDPersonas.mdb";
+		string cadenaConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Environment.CurrentDirectory + "\\..\\..\\..\\BDPersonas.mdb";
 
 		private void conectar() {
 			this.conexion.ConnectionString = this.cadenaConexion;
