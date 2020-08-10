@@ -12,7 +12,7 @@ namespace PrimeraTarea
 		string nombre;
 		string apellido;
 		int dni;
-		// Falta guardar cambios y soy obediente benja, NO ENTIENDO ...
+		// Falta guardar cambios y soy obediente benja, NO ENTIENDO ....
 		public Persona(int dni) {
 			this.dni = dni;
 		}
