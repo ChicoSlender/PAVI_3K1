@@ -12,7 +12,7 @@ namespace PrimeraTarea
 		string nombre;
 		string apellido;
 		int dni;
-
+		// Falta guardar cambios y soy obediente benja, NO ENTIENDO ...
 		public Persona(int dni) {
 			this.dni = dni;
 		}
@@ -31,8 +31,8 @@ namespace PrimeraTarea
 			string consulta = "SELECT * FROM Persona WERE Dni=" + this.dni;
 			tabla = datos.consultar(consulta);
 
-			if (tabla.Rows.Count > 0)
-			{
+			if (tabla.Rows.Count > 0)	{
+
 				this.nombre = tabla.Rows[0][1].ToString();
 				this.apellido = tabla.Rows[0][2].ToString();
 				return true;
